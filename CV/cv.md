@@ -29,6 +29,7 @@ Graduated from the Odessa National Polytechnic University with a degree in Nucle
 +CSS
 +JS
 +Git
++Angular (Basic)
 
 ##**Code Example**
 
