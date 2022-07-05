@@ -5,6 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__background">
+        <div class="header-container">
+          <section class="header__description">
+            <img class="header__logo" src="assets/img/logo.png" alt="logo" />
+            <nav class="header__nav nav">
+              <ul class="nav__list list">
+                <li class="nav__item item"><a>How It Works</a></li>
+                <li class="nav__item item"><a>Plan Your Trip</a></li>
+                <li class="nav__item item"><a>Destinations</a></li>
+                <li class="nav__item item"><a>Travel Stories</a></li>
+              </ul>
+            </nav>
+            <button class="header__button">Login</button>
+          </section>
+          <button class="header__burger-menu"><img src="assets/img/burger.svg" alt="burger" /></button>
+        </div>
+        <section class="header__trip-search trip-search">
+          <h2 class="trip-search__title">Explore the beauty of the World</h2>
+          <p class="trip-search__description">Receive personalized recommendations for countries, hotels, activities and more</p>
+          <form class="trip-search__form form">
+            <input type="text" placeholder="What would you like to do?" class="form__text" />
+            <button class="trip-search__button button">Start Planning</button>
+          </form>
+        </section>
+      </div>
+    </header>
+    <main class="main">
+      <section class="three-steps">
+        <h2 class="three-steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
+        <ul class="three-steps__list">
+          <li class="three-steps__item item item_bike">
+            <div class="three-steps__image-wrapper">
+              <img class="three-steps__image three-steps__image_bike" src="assets/img/bike.png" alt="bike" />
+            </div>
+            <p class="three-steps__description">Tell us what you want to do</p>
+          </li>
+          <li class="three-steps__item item item_dates">
+            <div class="three-steps__image-wrapper">
+              <img class="three-steps__image three-steps__image_schedule" src="assets/img/dates.png" alt="schedule" />
+            </div>
+            <p class="three-steps__description">Share us preferable dates</p>
+          </li>
+          <li class="three-steps__item item item_plane">
+            <div class="three-steps__image-wrapper">
+              <img class="three-steps__image three-steps__image_plane" src="assets/img/plane.png" alt="plane" />
+            </div>
+            <p class="three-steps__description">We will give you recommendations</p>
+          </li>
+        </ul>
+      </section>
+      <section class="destinations">
+        <h2 class="destinations__title title">POPULAR DESTINATIONS</h2>
+        <ul class="destinations__slider slider">
+          <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
+          <li class="slider__item slider__item_japan item"><h3 class="slider__title">Japan</h3></li>
+          <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
+        </ul>
+        <ul class="dots">
+          <li class="dots__item item"></li>
+          <li class="dots__item item dots__item_active"></li>
+          <li class="dots__item item"></li>
+        </ul>
+        <button class="destinations__button button"><img class="button__arrow" src="assets/img/arrow.png" alt="arrow" />Find More</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="travel-stories__title title">TRAVEL STORIES</h2>
+      <div class="bottom-background">
+        <ul class="travel-stories__list">
+          <li class="travel-stories__item item">
+            <img class="travel-stories__img" src="assets/img/thailand.png" alt="thailand" />
+            <div class="travel-stories__description">
+              <h3 class="travel-stories__head">10 Photos of Attractive Thailand</h3>
+              <div class="travel-stories__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit... <br /><a href="#">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="travel-stories__item item">
+            <img class="travel-stories__img" src="assets/img/park.png" alt="national-park" />
+            <div class="travel-stories__description">
+              <h3 class="travel-stories__head">Canyonlands National Park, Utah</h3>
+              <div class="travel-stories__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit... <br /><a href="#">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="travel-stories__item item">
+            <img class="travel-stories__img" src="assets/img/mountains.png" alt="mountains" />
+            <div class="travel-stories__description">
+              <h3 class="travel-stories__head">I left my heart in the Mountains!</h3>
+              <div class="travel-stories__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit... <br /><a href="#">Read More</a>
+              </div>
+            </div>
+          </li>
+          <li class="travel-stories__item item">
+            <img class="travel-stories__img" src="assets/img/journey.png" alt="journey" />
+            <div class="travel-stories__description">
+              <h3 class="travel-stories__head">The Longest journey in my life!</h3>
+              <div class="travel-stories__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit... <br /><a href="#">Read More</a>
+              </div>
+            </div>
+          </li>
+          <button class="travel-stories__button button">
+            <img class="button__arrow" src="assets/img/arrow.png" alt="arrow" />See More
+          </button>
+        </ul>
+        <section class="footer-description">
+          <div class="footer-text">All Rights Reserved © Travel Portal</div>
+          <div class="footer-logo-container">
+            <img class="footer-logo" src="assets/img/inst.png" alt="instagram" />
+            <img class="footer-logo" src="assets/img/youtube.png" alt="youtube" />
+            <img class="footer-logo" src="assets/img/twitter.png" alt="twitter" />
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
