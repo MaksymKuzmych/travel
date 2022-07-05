@@ -1,1 +1,15 @@
+@media (max-width: 1023px) {
+  .header__nav {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+  }
 
+  .trip-search__button {
+    font-size: 20px;
+  }
+}
