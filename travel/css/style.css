@@ -312,13 +312,15 @@ body {
 .travel-stories__title {
   margin-bottom: 40px;
 }
+.travel-stories__background {
+  padding: 40px 8.7% 40px 8.3%;
+  background: rgba(255, 255, 255, 0.7);
+}
 
 .travel-stories__list {
-  padding: 40px 8.7% 40px 8.3%;
   font-family: 'Aleo';
   font-weight: 400;
   color: #0d606f;
-  background: rgba(255, 255, 255, 0.7);
 }
 
 .travel-stories__item {
@@ -383,7 +385,4 @@ body {
   width: 19%;
   display: flex;
   justify-content: space-between;
-}
-.footer-logo {
-  margin: 5%;
 }
