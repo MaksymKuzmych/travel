@@ -29,17 +29,35 @@
     border: none;
   }
 
-  .header__burger-menu {
+  .burger-menu {
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -170px;
     height: 250px;
     width: 160px;
     margin: 5px;
+    transition: all 0.3s ease-in;
     border-radius: 10px;
     background: #f2785c;
     box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    z-index: 3;
+  }
+
+  .burger-menu_opened {
+    display: block;
+  }
+
+  .burger-menu_closed {
+    display: none;
+  }
+
+  .burger-menu_right0 {
+    right: 0;
+  }
+
+  .burger-menu_right170 {
+    right: -170px;
   }
 
   .burger-menu__list {
@@ -79,6 +97,28 @@
   .header-container {
     background: none;
     box-shadow: none;
+  }
+
+  .slider__item {
+    height: 560px;
+  }
+  .slider__title {
+    margin: 480px 0 0 1.9%;
+  }
+
+  .travel-stories__text {
+    display: -webkit-box;
+    display: box;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 8;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
   }
 
   .footer-description {
@@ -246,6 +286,10 @@
     display: none;
   }
 
+  .slider__arrow {
+    display: none;
+  }
+
   .laptop-dots {
     display: none;
   }
@@ -396,18 +440,6 @@
   }
 
   .travel-stories__text {
-    display: -webkit-box;
-    display: box;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 8;
-    -webkit-line-clamp: 8;
-    line-clamp: 8;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
     font-size: 9px;
     line-height: 11px;
   }
