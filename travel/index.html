@@ -26,8 +26,23 @@
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script/script.js"></script>
+    <script defer src="script/burger.js"></script>
+    <script defer src="script/desktop-slider.js"></script>
   </head>
   <body>
+    <div class="wrapper wrapper_closed"></div>
+    <div class="burger-menu">
+      <img class="burger-menu__cancel" src="assets/img/burger-menu__cancel.svg" alt="cancel" />
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item item"><a href="#trip-search">How It Works</a></li>
+        <li class="burger-menu__item item"><a href="#three-steps">Plan Your Trip</a></li>
+        <li class="burger-menu__item item"><a href="#destinations">Destinations</a></li>
+        <li class="burger-menu__item item"><a href="#travel-stories">Travel Stories</a></li>
+        <li class="burger-menu__item item"><a>Account</a></li>
+        <li class="burger-menu__item item"><a href="#social-media">Social Media</a></li>
+      </ul>
+    </div>
     <header class="header">
       <div class="header__background">
         <div class="header-container">
@@ -41,7 +56,10 @@
                 <li class="nav__item item"><a>Travel Stories</a></li>
               </ul>
             </nav>
-            <button class="header__button">Login</button>
+            <div class="button-container">
+              <button class="header__button">Login</button
+              ><button class="header__burger-button"><img src="assets/img/burger.svg" alt="burger" /></button>
+            </div>
           </section>
           <button class="header__burger-menu"><img src="assets/img/burger.svg" alt="burger" /></button>
         </div>
@@ -81,12 +99,18 @@
       </section>
       <section class="destinations">
         <h2 class="destinations__title title">POPULAR DESTINATIONS</h2>
-        <ul class="destinations__slider slider">
-          <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
-          <li class="slider__item slider__item_japan item"><h3 class="slider__title">Japan</h3></li>
-          <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
-        </ul>
-        <ul class="dots">
+        <div class="slider__arrow slider__arrow_left"></div>
+        <div class="slider__arrow slider__arrow_right"></div>
+        <div class="laptop-slider">
+          <ul class="destinations__slider slider">
+            <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
+            <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
+            <li class="slider__item slider__item_japan item"><h3 class="slider__title">Japan</h3></li>
+            <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
+            <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
+          </ul>
+        </div>
+        <ul class="laptop-dots">
           <li class="dots__item item"></li>
           <li class="dots__item item dots__item_active"></li>
           <li class="dots__item item"></li>
