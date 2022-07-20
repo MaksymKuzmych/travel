@@ -41,7 +41,7 @@
     border-radius: 10px;
     background: #f2785c;
     box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
-    z-index: 3;
+    z-index: 5;
   }
 
   .burger-menu_opened {
@@ -100,10 +100,14 @@
   }
 
   .slider__item {
-    height: 560px;
+    height: 400px;
   }
   .slider__title {
-    margin: 480px 0 0 1.9%;
+    margin: 340px 0 0 1.9%;
+  }
+
+  .travel-stories__img {
+    width: 45%;
   }
 
   .travel-stories__text {
@@ -330,14 +334,14 @@
     bottom: 50%;
     margin-top: auto;
     margin-bottom: auto;
-    z-index: 99;
+    z-index: 3;
     cursor: pointer;
   }
 
   .pre {
     left: 15px;
-    border-top: 2.5px solid rgba(242, 120, 92, 0.5);
-    border-left: 2.5px solid rgba(242, 120, 92, 0.5);
+    border-top: 2.5px solid #f2785c;
+    border-left: 2.5px solid #f2785c;
     transform: rotate(-45deg);
   }
 
@@ -355,7 +359,7 @@
     width: 100%;
     bottom: 12px;
     text-align: center;
-    z-index: 99;
+    z-index: 3;
   }
 
   .mobile-slider__dots {
@@ -375,7 +379,7 @@
   #i1:checked ~ #one,
   #i2:checked ~ #two,
   #i3:checked ~ #three {
-    z-index: 9;
+    z-index: 3;
   }
 
   #i1:checked ~ .mobile-slider__nav #dot1,
