@@ -275,6 +275,10 @@
     display: none;
   }
 
+  .laptop-dots {
+    display: none;
+  }
+
   .mobile-slider {
     display: block;
   }
