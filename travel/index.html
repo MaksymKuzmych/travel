@@ -26,20 +26,56 @@
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text:wght@500&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,700&family=IBM+Plex+Serif:wght@100&family=Montserrat&family=Red+Hat+Text&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="script/script.js"></script>
     <script defer src="script/burger.js"></script>
     <script defer src="script/desktop-slider.js"></script>
+    <script defer src="script/popup.js"></script>
   </head>
   <body>
-    <div class="wrapper wrapper_closed"></div>
-    <div class="burger-menu">
+    <div class="wrapper closed"></div>
+    <div class="login-popup closed">
+      <h2 class="login-popup__title">Log in to your account</h2>
+      <button class="login-popup__button signIn-button signIn-button_facebook">
+        <img src="assets/img/facebook-logo.svg" alt="facebook" class="signIn-button__logo" />
+        <p class="signIn-button__text">Sign In with Facebook</p></button
+      ><br />
+      <button class="login-popup__button signIn-button signIn-button_google">
+        <img src="assets/img/google-logo.svg" alt="google" class="signIn-button__logo" />
+        <p class="signIn-button__text">Sign In with Google</p>
+      </button>
+      <div class="or-wrapper">
+        <span class="or-transition">or</span>
+      </div>
+      <form action="" method="POST" class="signIn-form">
+        <label for="email" class="signIn-form__label">E-mail</label>
+        <input type="text" id="email" class="signIn-form__input" />
+        <label for="password" class="signIn-form__label">Password</label>
+        <input type="password" id="password" class="signIn-form__input" />
+        <input type="submit" value="Sign In" class="signIn-form__submit login-popup__button" />
+      </form>
+      <p class="forgot-password"><a href="" class="forgot-password__link">Forgot Your Password?</a></p>
+      <hr />
+      <div class="popup-link__wrapper">
+        <p class="register">Don't have an account? <a href="" class="register__link">Register</a></p>
+        <p class="login">Already have an account? <a href="" class="login__link">Log in</a></p>
+      </div>
+    </div>
+    <div class="burger-menu closed">
       <img class="burger-menu__cancel" src="assets/img/burger-menu__cancel.svg" alt="cancel" />
       <ul class="burger-menu__list">
         <li class="burger-menu__item item"><a href="#trip-search">How It Works</a></li>
         <li class="burger-menu__item item"><a href="#three-steps">Plan Your Trip</a></li>
         <li class="burger-menu__item item"><a href="#destinations">Destinations</a></li>
         <li class="burger-menu__item item"><a href="#travel-stories">Travel Stories</a></li>
-        <li class="burger-menu__item item"><a>Account</a></li>
+        <li class="burger-menu__item item item_account"><a>Account</a></li>
         <li class="burger-menu__item item"><a href="#social-media">Social Media</a></li>
       </ul>
     </div>
@@ -60,7 +96,7 @@
               </ul>
             </nav>
             <div class="button-container">
-              <button class="header__button">Login</button
+              <button class="header__button button_login">Login</button
               ><button class="header__burger-button"><img src="assets/img/burger.svg" alt="burger" /></button>
             </div>
           </section>

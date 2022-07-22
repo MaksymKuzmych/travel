@@ -4,36 +4,42 @@ const burgerMenu = document.querySelector('.burger-menu')
 const wrapper = document.querySelector('.wrapper')
 const burgerItem = document.querySelectorAll('.burger-menu__item')
 
-function close() {
+function burgerClose() {
   setTimeout(function () {
     burgerMenu.classList.remove('burger-menu_right0')
     burgerMenu.classList.add('burger-menu_right170')
     setTimeout(function () {
-      burgerMenu.classList.remove('burger-menu_opened')
+      burgerMenu.classList.remove('opened')
       burgerMenu.classList.add('closed')
-      wrapper.classList.remove('wrapper_opened')
-      wrapper.classList.add('wrapper_closed')
+      wrapper.classList.remove('opened')
+      wrapper.classList.add('closed')
     }, 300)
   }, 0)
 }
 
-function open() {
+function burgerOpen() {
   setTimeout(function () {
-    burgerMenu.classList.remove('burger-menu_closed')
-    burgerMenu.classList.add('burger-menu_opened')
+    burgerMenu.classList.remove('closed')
+    burgerMenu.classList.add('opened')
     setTimeout(function () {
       burgerMenu.classList.remove('burger-menu_right170')
       burgerMenu.classList.add('burger-menu_right0')
-      wrapper.classList.remove('wrapper_closed')
-      wrapper.classList.add('wrapper_opened')
+      wrapper.classList.remove('closed')
+      wrapper.classList.add('opened')
     }, 300)
   }, 0)
 }
 
-burgerBtn.addEventListener('click', open)
+burgerBtn.addEventListener('click', burgerOpen)
 
-burgerCancel.addEventListener('click', close)
+burgerCancel.addEventListener('click', burgerClose)
 
 burgerItem.forEach((el) => {
-  el.addEventListener('click', close)
+  el.addEventListener('click', burgerClose)
+})
+
+wrapper.addEventListener('click', (event) => {
+  if (event.target.classList.contains('wrapper')) {
+    burgerClose()
+  }
 })
