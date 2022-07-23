@@ -43,36 +43,36 @@
     <div class="wrapper closed"></div>
     <div class="login-popup closed">
       <h2 class="login-popup__title">Log in to your account</h2>
-      <button class="login-popup__button signIn-button signIn-button_facebook">
-        <img src="assets/img/facebook-logo.svg" alt="facebook" class="signIn-button__logo" />
-        <p class="signIn-button__text">Sign In with Facebook</p></button
+      <button class="login-popup__button button_facebook">
+        <img src="assets/img/facebook-logo.svg" alt="facebook" class="button__logo" />
+        <p class="button__text">Sign In with Facebook</p></button
       ><br />
-      <button class="login-popup__button signIn-button signIn-button_google">
-        <img src="assets/img/google-logo.svg" alt="google" class="signIn-button__logo" />
-        <p class="signIn-button__text">Sign In with Google</p>
+      <button class="login-popup__button button_google">
+        <img src="assets/img/google-logo.svg" alt="google" class="button__logo" />
+        <p class="button__text">Sign In with Google</p>
       </button>
       <div class="or-wrapper">
         <span class="or-transition">or</span>
       </div>
-      <form action="" method="POST" class="signIn-form">
-        <label for="email" class="signIn-form__label">E-mail</label>
-        <input type="text" id="email" class="signIn-form__input" />
-        <label for="password" class="signIn-form__label">Password</label>
-        <input type="password" id="password" class="signIn-form__input" />
-        <input type="submit" value="Sign In" class="signIn-form__submit login-popup__button" />
+      <form action="#" method="POST" class="sign-form">
+        <label for="email" class="sign-form__label">E-mail</label>
+        <input type="text" id="email" class="sign-form__input input_email" />
+        <label for="password" class="sign-form__label">Password</label>
+        <input type="password" id="password" class="sign-form__input input_password" />
+        <input type="submit" value="Sign In" class="sign-form__submit login-popup__button" />
       </form>
       <p class="forgot-password"><a href="" class="forgot-password__link">Forgot Your Password?</a></p>
       <hr />
       <div class="popup-link__wrapper">
-        <p class="register">Don't have an account? <a href="" class="register__link">Register</a></p>
-        <p class="login">Already have an account? <a href="" class="login__link">Log in</a></p>
+        <p class="login-popup__register">Don't have an account? <a href="#" class="register__link">Register</a></p>
+        <p class="login-popup__login">Already have an account? <a href="#" class="login__link">Log in</a></p>
       </div>
     </div>
     <div class="burger-menu closed">
       <img class="burger-menu__cancel" src="assets/img/burger-menu__cancel.svg" alt="cancel" />
       <ul class="burger-menu__list">
         <li class="burger-menu__item item"><a href="#trip-search">How It Works</a></li>
-        <li class="burger-menu__item item"><a href="#three-steps">Plan Your Trip</a></li>
+        <li class="burger-menu__item item"><a href="#steps">Plan Your Trip</a></li>
         <li class="burger-menu__item item"><a href="#destinations">Destinations</a></li>
         <li class="burger-menu__item item"><a href="#travel-stories">Travel Stories</a></li>
         <li class="burger-menu__item item item_account"><a>Account</a></li>
@@ -80,7 +80,7 @@
       </ul>
     </div>
     <header class="header">
-      <div class="header__background">
+      <div class="header-background">
         <div class="header-container">
           <section class="header__description">
             <div class="header-img">
@@ -90,48 +90,48 @@
             <nav class="header__nav nav">
               <ul class="nav__list list">
                 <li class="nav__item item"><a href="#trip-search">How It Works</a></li>
-                <li class="nav__item item"><a href="#three-steps">Plan Your Trip</a></li>
+                <li class="nav__item item"><a href="#steps">Plan Your Trip</a></li>
                 <li class="nav__item item"><a href="#destinations">Destinations</a></li>
                 <li class="nav__item item"><a href="#travel-stories">Travel Stories</a></li>
               </ul>
             </nav>
             <div class="button-container">
-              <button class="header__button button_login">Login</button
+              <button class="header__button">Login</button
               ><button class="header__burger-button"><img src="assets/img/burger.svg" alt="burger" /></button>
             </div>
           </section>
         </div>
-        <section class="header__trip-search trip-search" id="trip-search">
+        <section class="trip-search" id="trip-search">
           <h2 class="trip-search__title">Explore the beauty of the World</h2>
           <p class="trip-search__description">Receive personalized recommendations for countries, hotels, activities and more</p>
           <form class="trip-search__form form">
-            <input type="text" placeholder="What would you like to do?" class="form__text" />
+            <input type="text" placeholder="What would you like to do?" class="trip-search__text" />
             <button class="trip-search__button button">Start Planning</button>
           </form>
         </section>
       </div>
     </header>
     <main class="main">
-      <section class="three-steps" id="three-steps">
-        <h2 class="three-steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
-        <ul class="three-steps__list">
-          <li class="three-steps__item item item_bike">
-            <div class="three-steps__image-wrapper">
-              <img class="three-steps__image three-steps__image_bike" src="assets/img/bike.png" alt="bike" />
+      <section class="steps" id="steps">
+        <h2 class="steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
+        <ul class="steps__list">
+          <li class="steps__item item item_bike">
+            <div class="steps__image-wrapper">
+              <img class="steps__image_bike" src="assets/img/bike.svg" alt="bike" />
             </div>
-            <p class="three-steps__description description__bike">Tell us what you want to do</p>
+            <p class="steps__description description__bike">Tell us what you want to do</p>
           </li>
-          <li class="three-steps__item item item_dates">
-            <div class="three-steps__image-wrapper">
-              <img class="three-steps__image three-steps__image_schedule" src="assets/img/dates.png" alt="schedule" />
+          <li class="steps__item item item_dates">
+            <div class="steps__image-wrapper">
+              <img class="steps__image_schedule" src="assets/img/dates.svg" alt="schedule" />
             </div>
-            <p class="three-steps__description description__dates">Share us preferable dates</p>
+            <p class="steps__description description__dates">Share us preferable dates</p>
           </li>
-          <li class="three-steps__item item item_plane">
-            <div class="three-steps__image-wrapper">
-              <img class="three-steps__image three-steps__image_plane" src="assets/img/plane.png" alt="plane" />
+          <li class="steps__item item item_plane">
+            <div class="steps__image-wrapper">
+              <img class="steps__image_plane" src="assets/img/plane.svg" alt="plane" />
             </div>
-            <p class="three-steps__description description__plane">We will give you recommendations</p>
+            <p class="steps__description description__plane">We will give you recommendations</p>
           </li>
         </ul>
       </section>
@@ -140,12 +140,12 @@
         <div class="slider__arrow slider__arrow_left"></div>
         <div class="slider__arrow slider__arrow_right"></div>
         <div class="laptop-slider">
-          <ul class="destinations__slider slider">
-            <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
-            <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
-            <li class="slider__item slider__item_japan item"><h3 class="slider__title">Japan</h3></li>
-            <li class="slider__item slider__item_usa item"><h3 class="slider__title">USA</h3></li>
-            <li class="slider__item slider__item_spain item"><h3 class="slider__title">Spain</h3></li>
+          <ul class="laptop-slider__slider slider">
+            <li class="slider__item item slider__item_usa"><h3 class="slider__title">USA</h3></li>
+            <li class="slider__item item slider__item_spain"><h3 class="slider__title">Spain</h3></li>
+            <li class="slider__item item slider__item_japan"><h3 class="slider__title">Japan</h3></li>
+            <li class="slider__item item slider__item_usa"><h3 class="slider__title">USA</h3></li>
+            <li class="slider__item item slider__item_spain"><h3 class="slider__title">Spain</h3></li>
           </ul>
         </div>
         <ul class="laptop-dots">
@@ -181,8 +181,10 @@
             <label class="mobile-slider__dots" id="dot3" for="i3"></label>
           </div>
         </div>
-
-        <button class="destinations__button button"><img class="button__arrow" src="assets/img/arrow.png" alt="arrow" />Find More</button>
+        <button class="destinations__button button">
+          <img class="button__arrow" src="assets/img/arrow.svg" alt="arrow" />
+          <p>Find More</p>
+        </button>
       </section>
     </main>
     <footer class="footer">
@@ -201,7 +203,7 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit...
                 </div>
-                <a href="#">Read More</a>
+                <a href="#" class="travel-stories__link">Read More</a>
               </div>
             </li>
             <li class="travel-stories__item item">
@@ -215,7 +217,7 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit...
                 </div>
-                <a href="#">Read More</a>
+                <a href="#" class="travel-stories__link">Read More</a>
               </div>
             </li>
             <li class="travel-stories__item item">
@@ -229,7 +231,7 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit...
                 </div>
-                <a href="#">Read More</a>
+                <a href="#" class="travel-stories__link">Read More</a>
               </div>
             </li>
             <li class="travel-stories__item item">
@@ -243,23 +245,23 @@
                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit...
                 </div>
-                <a href="#">Read More</a>
+                <a href="#" class="travel-stories__link">Read More</a>
               </div>
             </li>
           </ul>
           <button class="travel-stories__button button">
-            <img class="button__arrow" src="assets/img/arrow.png" alt="arrow" />See More
+            <img class="button__arrow" src="assets/img/arrow.svg" alt="arrow" />See More
           </button>
         </div>
         <section class="footer-description" id="social-media">
           <div class="footer-text">All Rights Reserved © Travel Portal</div>
-          <div class="footer-logo-container">
-            <img class="footer-logo footer-logo__inst" src="assets/img/inst.svg" alt="instagram" />
-            <div class="footer-logo footer-logo__youtube">
-              <img class="footer-logo__youtube_out" src="assets/img/youtube.svg" alt="youtube" />
-              <img class="footer-logo__youtube_in" src="assets/img/youtube2.svg" alt="youtube" />
+          <div class="footer-logo_wrapper">
+            <img class="footer-logo footer-logo_inst" src="assets/img/inst.svg" alt="instagram" />
+            <div class="footer-logo footer-logo_youtube">
+              <img class="footer-logo_youtube-out" src="assets/img/youtube.svg" alt="youtube" />
+              <img class="footer-logo_youtube-in" src="assets/img/youtube2.svg" alt="youtube" />
             </div>
-            <img class="footer-logo footer-logo__twitter" src="assets/img/twitter.svg" alt="twitter" />
+            <img class="footer-logo footer-logo_twitter" src="assets/img/twitter.svg" alt="twitter" />
           </div>
         </section>
       </div>

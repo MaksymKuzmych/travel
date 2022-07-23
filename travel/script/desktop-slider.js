@@ -1,4 +1,4 @@
-let slider = document.querySelector('.destinations__slider')
+let slider = document.querySelector('.laptop-slider__slider')
 let arrowLeft = document.querySelector('.slider__arrow_left')
 let arrowRight = document.querySelector('.slider__arrow_right')
 let dots = document.querySelectorAll('.dots__item')

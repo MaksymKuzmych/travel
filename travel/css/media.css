@@ -16,6 +16,7 @@
   .login-popup {
     width: 70%;
   }
+
   .header__description {
     justify-content: space-between;
     width: 92.3%;
@@ -68,7 +69,6 @@
     height: 176px;
     margin: 44px 12px 30px;
     font-family: 'Red Hat Text';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -101,10 +101,11 @@
   }
 
   .slider__item {
-    height: 400px;
+    height: 600px;
   }
+
   .slider__title {
-    margin: 340px 0 0 1.9%;
+    margin: 530px 0 0 1.9%;
   }
 
   .travel-stories__img {
@@ -136,7 +137,7 @@
     display: none;
   }
 
-  .footer-logo-container {
+  .footer-logo_wrapper {
     width: 135px;
     margin: 0 0 0 8px;
   }
@@ -157,7 +158,7 @@
     background-size: cover;
     height: 251px;
   }
-  .header__background {
+  .header-background {
     background: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 25.1%);
   }
 
@@ -181,7 +182,7 @@
     display: none;
   }
 
-  .header__trip-search {
+  .trip-search {
     width: 92.3%;
     height: 48px;
     margin: 0;
@@ -203,13 +204,13 @@
     padding: 9px;
   }
 
-  .form__text {
+  .trip-search__text {
     margin-left: 7.5px;
     font-size: 14px;
     line-height: 17px;
   }
 
-  .form__text::placeholder {
+  .trip-search__text::placeholder {
     font-size: 13.3px;
     line-height: 17px;
   }
@@ -221,7 +222,7 @@
     line-height: 15px;
   }
 
-  .three-steps {
+  .steps {
     padding: 20px 0;
   }
 
@@ -230,11 +231,11 @@
     line-height: 19px;
   }
 
-  .three-steps__list {
+  .steps__list {
     margin: 0 3.85%;
   }
 
-  .three-steps__item {
+  .steps__item {
     align-items: center;
   }
 
@@ -255,28 +256,28 @@
     margin-right: 0;
   }
 
-  .three-steps__image-wrapper {
+  .steps__image-wrapper {
     width: 70px;
     height: 70px;
     margin: 20px 0;
   }
 
-  .three-steps__image_bike {
+  .steps__image_bike {
     width: 35px;
     height: 31.5px;
   }
 
-  .three-steps__image_schedule {
+  .steps__image_schedule {
     width: 35px;
     height: 35px;
   }
 
-  .three-steps__image_plane {
+  .steps__image_plane {
     width: 40px;
     height: 30px;
   }
 
-  .three-steps__description {
+  .steps__description {
     text-align: start;
     font-size: 10px;
     line-height: 12px;
@@ -406,7 +407,6 @@
     top: 8px;
     left: 15px;
     font-family: 'Red Hat Text';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -456,7 +456,7 @@
     line-height: 11px;
   }
 
-  .travel-stories__description a {
+  .travel-stories__link {
     display: block;
     font-size: 9px;
   }

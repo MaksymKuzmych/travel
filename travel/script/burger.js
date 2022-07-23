@@ -1,21 +1,8 @@
 const burgerBtn = document.querySelector('.header__burger-button')
 const burgerCancel = document.querySelector('.burger-menu__cancel')
 const burgerMenu = document.querySelector('.burger-menu')
-const wrapper = document.querySelector('.wrapper')
 const burgerItem = document.querySelectorAll('.burger-menu__item')
-
-function burgerClose() {
-  setTimeout(function () {
-    burgerMenu.classList.remove('burger-menu_right0')
-    burgerMenu.classList.add('burger-menu_right170')
-    setTimeout(function () {
-      burgerMenu.classList.remove('opened')
-      burgerMenu.classList.add('closed')
-      wrapper.classList.remove('opened')
-      wrapper.classList.add('closed')
-    }, 300)
-  }, 0)
-}
+const wrapper = document.querySelector('.wrapper')
 
 function burgerOpen() {
   setTimeout(function () {
@@ -26,6 +13,19 @@ function burgerOpen() {
       burgerMenu.classList.add('burger-menu_right0')
       wrapper.classList.remove('closed')
       wrapper.classList.add('opened')
+    }, 300)
+  }, 0)
+}
+
+function burgerClose() {
+  setTimeout(function () {
+    burgerMenu.classList.remove('burger-menu_right0')
+    burgerMenu.classList.add('burger-menu_right170')
+    setTimeout(function () {
+      burgerMenu.classList.remove('opened')
+      burgerMenu.classList.add('closed')
+      wrapper.classList.remove('opened')
+      wrapper.classList.add('closed')
     }, 300)
   }, 0)
 }
