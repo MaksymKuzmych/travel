@@ -1,0 +1,636 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  z-index: 4;
+  position: fixed;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.login-popup {
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -670px;
+  left: 50%;
+  width: 45%;
+  max-width: 650px;
+  min-width: 310px;
+  height: 660px;
+  padding: 25px 45px 23px 45px;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in;
+  border-radius: 16px;
+  background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-popup_top60 {
+  top: 60px;
+}
+
+.login-popup_top-670 {
+  top: -670px;
+}
+
+.login-popup__title {
+  margin-bottom: 30px;
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0d606f;
+}
+
+.login-popup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-size: 20px;
+  line-height: 26px;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.button_facebook {
+  color: #ffffff;
+  background: #1877f2;
+}
+
+.button_google {
+  margin-bottom: 30px;
+  color: #0d606f;
+  background: #ffffff;
+}
+
+.button__logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.or-wrapper {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.or-wrapper span {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+}
+
+.or-wrapper:before,
+.or-wrapper:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+
+.or-wrapper:before {
+  left: -9px;
+  margin-left: -100%;
+}
+
+.or-wrapper:after {
+  right: -9px;
+  margin-right: -100%;
+}
+
+.sign-form {
+  width: 100%;
+}
+
+.sign-form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Aleo';
+  font-size: 16px;
+  line-height: 19px;
+  color: #0d606f;
+}
+
+.sign-form__input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-size: 22px;
+  line-height: 26px;
+  color: #0d606f;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.sign-form__submit {
+  margin: 25px 0 10px;
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.forgot-password {
+  margin-bottom: 26px;
+  text-decoration-line: underline;
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0d606f;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.login-popup a,
+.login-popup a:active,
+.login-popup a:hover {
+  color: #0d606f;
+}
+
+.login-popup hr {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(13, 96, 111, 0.5);
+}
+
+.login-popup__register,
+.login-popup__login {
+  font-family: 'Aleo';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.login-popup__login {
+  display: none;
+}
+
+.header a,
+.header a:active,
+.header a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-background {
+  background: url(../assets/img/upper-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background: rgba(242, 120, 92, 0.7);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header__description {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2.8%;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.header__img {
+  margin-bottom: 9px;
+}
+
+.nav {
+  position: relative;
+  margin: 10px 2.3% 0 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+}
+
+.item {
+  list-style-type: none;
+}
+
+.header__button {
+  width: 103px;
+  height: 41px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: rgba(13, 96, 111, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  color: #ffffff;
+}
+
+.header__burger-button {
+  display: none;
+  background: inherit;
+  border: none;
+}
+
+.trip-search {
+  max-width: 892px;
+  margin: 32px 1% 0 8.5%;
+  padding-bottom: 254px;
+  font-family: 'Aleo';
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.trip-search__title {
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.trip-search__description {
+  margin-top: 33px;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.trip-search__form {
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  margin-top: 46px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.trip-search__text {
+  margin-left: 23px;
+  outline: none;
+  border: none;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2785c;
+  background: rgba(255, 255, 255, 0);
+}
+
+.trip-search__text::placeholder {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-size: 22.5px;
+  line-height: 29px;
+  color: #f2785c;
+}
+
+.button {
+  width: 228px;
+  height: 59px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0 97px;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #f2785c;
+}
+
+.steps__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_bike {
+  width: 17.1%;
+  margin-left: 9.5%;
+}
+
+.item_dates {
+  width: 15.5%;
+  margin-left: 5%;
+}
+.item_plane {
+  width: 22%;
+  margin-right: 9%;
+}
+
+.steps__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto 30px;
+  border-radius: 16px;
+  background: #f2785c;
+}
+
+.steps__image_bike {
+  width: 50px;
+  height: 45px;
+}
+
+.steps__image_schedule {
+  width: 52px;
+  height: 52px;
+}
+
+.steps__image_plane {
+  width: 60px;
+  height: 45px;
+}
+
+.steps__description {
+  text-align: center;
+  font-family: 'Aleo';
+  font-size: 20px;
+  line-height: 24px;
+  color: #0d606f;
+}
+
+.destinations {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+
+.destinations__title {
+  margin-bottom: 46px;
+}
+
+.laptop-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  height: 800px;
+  width: 18%;
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.slider__arrow_left {
+  left: 0;
+}
+
+.slider__arrow_right {
+  right: 0;
+}
+
+.laptop-slider__slider {
+  display: flex;
+  justify-content: space-between;
+  width: 294.4%;
+  transition: transform 0.2s ease-in;
+}
+
+.slider__item {
+  width: 18.87%;
+  height: 800px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__item_spain {
+  background-image: url(../assets/img/spain.png);
+}
+
+.slider__item_japan {
+  background-image: url(../assets/img/japan.png);
+}
+
+.slider__item_usa {
+  background-image: url(../assets/img/USA.png);
+}
+
+.slider__title {
+  font-family: 'Red Hat Text';
+  margin: 718px 0 0 1.9%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.laptop-dots {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  margin: 24px 0 40px;
+}
+
+.dots__item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(242, 120, 92, 0.5);
+}
+
+.dots__item_active {
+  background: #f2785c;
+}
+
+.mobile-slider {
+  display: none;
+}
+
+.button__arrow {
+  width: 35px;
+  height: 22.5px;
+  margin-right: 12.5px;
+}
+
+.destinations__button,
+.travel-stories__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-background {
+  background-image: url(../assets/img/bottom-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.travel-stories__title {
+  margin-bottom: 40px;
+}
+
+.travel-stories__background {
+  padding: 40px 8.7% 40px 8.3%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.travel-stories__list {
+  font-family: 'Aleo';
+  color: #0d606f;
+}
+
+.travel-stories__item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.travel-stories__img {
+  width: 35%;
+  height: 250px;
+  border-radius: 16px;
+  filter: drop-shadow(0px 4px 4px #0d606f);
+}
+
+.travel-stories__link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0d606f;
+  font-size: 20px;
+}
+
+.travel-stories__description {
+  margin-left: 45px;
+}
+
+.travel-stories__head {
+  margin-bottom: 24px;
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+.travel-stories__text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.travel-stories__button {
+  margin: 37px auto 2px;
+}
+
+.footer-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 8.5% 0 41%;
+  padding-bottom: 19px;
+}
+
+.footer-text {
+  align-self: center;
+  text-align: center;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer-logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 19%;
+}
+
+.footer-logo_youtube {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.footer-logo_youtube-in {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 50%;
+}
